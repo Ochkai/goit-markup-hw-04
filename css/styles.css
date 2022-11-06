@@ -245,10 +245,17 @@ img {
 .list-flexbox .features-item:last-child {
   margin-right: 0;
 }
-.features-icons {
+
+.features-icons-element {
+  display: block;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--command-background-color);
   padding: 25px 100px;
+}
+.features-icons {
+  background-color: var(--command-background-color);
   border-radius: var(--border-radius-button);
 }
 .list-features-title {
@@ -326,7 +333,6 @@ img {
   padding-right: 32px;
   margin-top: 16px;
   text-align: center;
-  /* outline: 1px solid green; */
 }
 .item-icons {
   margin-right: var(--icons-set-gap);
@@ -352,27 +358,28 @@ img {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
-
 .partners-item {
+  margin-right: var(--card-set-gap);
+}
+.link-partners-icons {
+  display: block;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
   border: 1px solid var(--fill-icons);
   border-radius: var(--border-radius-button);
-  margin-right: var(--card-set-gap);
-
   fill: var(--fill-icons);
 }
-
-.partners-item:hover,
-.partners-item:focus {
+.link-partners-icons:hover,
+.link-partners-icons:focus {
   fill: var(--backgraund-icons-hover);
   border: 1px solid var(--backgraund-icons-hover);
 }
+
 .partners-item:last-child {
   margin-right: 0;
 }
@@ -477,9 +484,14 @@ img {
 .card-set .card-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.card-set .card-item:hover,
-.card-set .card-item:focus {
+.card-item .link-card-item:hover,
+.card-item .link-card-item:focus {
   box-shadow: var(--box-shadov-cards);
+}
+
+.link-card-item {
+  display: block;
+  text-decoration: none;
 }
 .card-heading {
   margin-top: 0;
